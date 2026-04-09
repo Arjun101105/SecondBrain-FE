@@ -84,7 +84,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-zinc-950 text-zinc-50 antialiased selection:bg-[#0070F3] selection:text-white;
   }
   html {
     @apply font-sans;
@@ -96,6 +96,21 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-zinc-950 text-zinc-50 antialiased selection:bg-[#0070F3] selection:text-white;
   }
+}
+
+/* Float animation for brain image */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Hide scrollbar but keep scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
