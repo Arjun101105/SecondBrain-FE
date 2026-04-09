@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useStore } from '@/store/useStore';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { contentApi } from '@/api/client';
-import { X, PlayCircle, MessageSquare, FileText, Link as LinkIcon, FileUp, Trash2, ExternalLink, Save, Plus, Loader2, Play, Globe } from 'lucide-react';
+import { X, PlayCircle, MessageSquare, FileText, Link as LinkIcon, FileUp, Trash2, ExternalLink, Save, Plus, Loader2, Globe } from 'lucide-react';
 
 // ─── Helpers (shared with Cards.tsx) ────────────────────
 function getYouTubeId(url: string): string | null {
